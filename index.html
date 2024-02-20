@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>The Divided States Of America</title>
+	<link rel="stylesheet" href="css/gallery.css">
+	<script defer src = "js/gallery.js"></script>
+</head>
+
+<!-- prompt to say page has loaded -->
+  <body onload="pageLoaded(this)">
+
+	<main>
+		<!-- Section one with main container with banner images -->
+	    <section id ="section1">
+			<h1 id="marqueeTitle" tabindex="0">The Divided States Of America</h1>
+			 <!-- Main image container that loads thumbnail images when events onFocus & onmouseover occur -->
+			 <div id="image_container">
+				<!-- tab or hover text directions inside <p> tag inserted with java script -->
+				<p id="tabhoverTitle">
+				</p>	
+			    <!--Text to prompt user to use tab key. Text inserted with java script -->
+			 </div>
+			 <span id= "tabAgain"></span>
+		</section>
+
+		<!-- Section 2 with container of thumbnail images -->
+		<section>
+			<h2 id="thumbnailTitle" tabindex="0">Images of America</h2>
+				<!-- Six Thumbnail Images.-->	
+				<div id="thumbnail_container"> 	
+				    <img class = "preview"  alt = "Honest Abe Is Watching!"
+					src = "images/Abraham_Lincoln_Is_Watching.jpg" tabindex="0"
+					onmouseover = "upDate(this)" onmouseout = "unDo(this)"> 
+
+					<img class = "preview" alt = "What Is He Thinking?" 
+					src = "images/honestAbe.jpg"  tabindex="0"
+					onmouseover = "upDate(this)" onmouseout = "unDo(this)">
+
+					<img class = "preview" alt = "" 
+					src = "images/abeQuote.jpg" tabindex="0"
+					onmouseover = "upDate(this)" onmouseout = "unDo(this)">
+
+					<img class = "preview"  alt = ""
+					src = "images/getOverIt_.jpg" tabindex="0"
+					onmouseover = "upDate(this)" onmouseout = "unDo(this)">		
+
+					<img class = "preview" alt = "America Is Treading Water!"
+					src = "images/TwoAmericas_Treading_Water.jpeg" tabindex="0" 
+					onmouseover = "upDate(this)" onmouseout = "unDo(this)">
+
+
+					<img class = "preview" alt = "Capitol Hill Is Divided!" 
+					src = "images/Capitol_Hill_Divided.jpg"  tabindex="0"
+					onmouseover = "upDate(this)" onmouseout = "unDo(this)">
+				</div>
+		</section>		
+	</main>
+
+	  <!-- Footer section with copyright info and reload page button -->
+	   <footer>
+		<h3 id="footerTitle" tabindex="0">
+		 &copy; 2024 CAMtune Music
+		</h3>
+		   <!-- Button to reload page -->
+	       <div id="reloadDiv">
+		   <button id="reload_button" onclick="reloadPage()" tabindex="0"  onfocus="reloadPage()"
+		   >Reload Page</button>
+	       </div>	     
+	   </footer>
+      
+  </body>
+</html>
